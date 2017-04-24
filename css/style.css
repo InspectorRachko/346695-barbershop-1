@@ -17,3 +17,393 @@ h2 {
     font-weight: bold;
     line-height: 30px;
 }
+
+
+li {
+    display: inline;
+}
+
+h1,h2 {
+  padding-left: 10px;
+}
+
+span {
+  display: inline-block;
+  margin-top: 5px;
+  padding-left: 15px;
+}
+
+span span {
+  margin-top: 0px;
+  padding-left: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main_header {
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.to_start_page_btn {
+  float: left;
+  min-height: 70px;
+  width: 140px;
+  margin-right: 10px;
+  margin-left: 130px;
+  padding-left: 10px:
+}
+
+.mini_logo {
+  margin-left: 8px;
+  margin-top: 17px;
+}
+
+.icon_login {
+  margin-left: 10px;
+  margin-top: 19px;
+}
+
+.main_navigation {
+  float: left;
+  min-height: 70px;
+  width: 550px;
+  margin-right: 130px;
+}
+
+.user_block {
+  float: left;
+  min-height: 70px;
+  width: 100px;
+}
+
+.breadcrumbs {
+  min-height: 17px;
+  margin-bottom: 25px;
+  margin-left: 110px;
+}
+
+.main_footer {
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+
+.footer_contacts {
+  float: left;
+  width: 320px;
+  min-height: 90px;
+  padding: 10px;
+  margin-right: 60px;
+  margin-left: 110px;
+}
+
+.footer_social {
+  float: left;
+  width: 170px;
+  min-height: 90px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.social_btn {
+  display: inline-block;
+  margin-top: 23px;
+  margin-left: 6px;
+  margin-right: 28px;
+}
+
+.footer_copyright {
+  float: right;
+  width: 140px;
+  min-height: 90px;
+  padding-left: 30px;
+  margin-top: 10px;
+  margin-right: 130px;
+}
+
+.copyright_btn {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 20px
+}
+
+/*======================================
+ Правила для страницы catalog.html
+ =======================================*/
+
+.main_title {
+  margin-left: 110px;
+}
+
+.filter {
+  float:left;
+  height: 600px;
+  width: 220px;
+  margin-bottom: 160px;
+  margin-right: 20px;
+  margin-left: 110px;
+}
+
+.checkbox_filter {
+  margin-bottom: 115px;
+}
+
+.commit_filter_btn {
+  margin-top: 90px;
+}
+
+.shop_window  {
+  float:left;
+  height: 590px;
+  width: 720px;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.price_n_buy  {
+  margin-top: 15px;
+  margin-left: 15px;
+  padding-left: 10px;
+  height: 43px;
+  width: 187px;
+}
+
+.buy_btn {
+  margin-left: 35px;
+}
+
+.product {
+  float:left;
+  height: 286px;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.product_picture {
+  vertical-align:bottom;
+}
+
+.product:nth-child(3), .product:nth-child(6) {
+  margin-right: 0px;
+}
+
+.pagination {
+  float:left;
+  height: 43px;
+  width: 193px;
+  margin-top: 25px;
+}
+
+.shop_page_btn {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 15px;
+  margin-right: 23px;
+}
+
+.shop_page_btn:last-child {
+  margin-right: 0px;
+}
+/*======================================
+ Правила для страницы catalog-item.html
+ =======================================*/
+
+ .big_picture {
+   margin-bottom: 20px;
+ }
+
+ .thumbnail {
+   float: left;
+   margin-right: 20px;
+ }
+
+ .thumbnail:nth-child(3) {
+   float: right;
+   margin-right: 0px;
+ }
+
+ .gallery {
+   float:left;
+   height: 668px;
+   width: 480px;
+   margin-bottom: 20px;
+ }
+
+ .product_info {
+   float:right;
+   height: 516px;
+   width: 390px;
+ }
+
+ .availability {
+   float:left;
+   margin-bottom: 20px;
+ }
+
+ .product_description {
+   float:left;
+   margin-bottom: 20px;
+ }
+
+ .description_price_n_buy {
+   float:left;
+   margin-bottom: 45px;
+   width: inherit;
+ }
+
+ .product_features {
+   float:left;
+ }
+
+ .article {
+   float:right;
+ }
+
+/*=======================
+ Временное подсвечивание
+=========================*/
+
+body {
+ padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+ position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+ display: none;
+}
+
+body > *::before {
+ top: -3px;
+ left: -3px;
+}
+
+body > * > *::before {
+ top: -3px;
+ left: -3px;
+}
+
+body > * > * > *::before {
+ top: 0;
+ left: 0;
+}
+
+body > * {
+ background: rgba(0, 128, 0, 0.2);
+ box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+ color: white;
+
+ background: green;
+}
+
+body > * > * {
+ background: rgba(255, 45, 82, 0.2);
+ box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > *::before {
+ color: white;
+
+ background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+ background: rgba(234, 255, 45, 0.2);
+ box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
+}
+
+body > * > * > *::before {
+ color: black;
+
+ background: rgb(234, 255, 45);
+}
+
+.main_header::before {
+ content: ".main-header";
+}
+
+.container::before {
+ content: ".container";
+}
+
+.main_header .container::before {
+ top: auto;
+ bottom: -28px;
+}
+
+.main_navigation::before {
+ content: ".main-navigation";
+}
+
+.user_block::before {
+ content: ".user-block";
+}
+
+.index_logo::before {
+ content: ".index-logo";
+}
+
+.features::before {
+ content: ".features";
+ top: -28px;
+}
+
+.features_item::before {
+ content: ".features-item";
+}
+
+.index_content::before {
+ content: ".index-content";
+}
+
+.index_content_left::before {
+ content: ".index-content-left";
+ left: auto;
+ right: 0;
+}
+
+.index_content_right::before {
+ content: ".index-content-right";
+ left: auto;
+ right: 0;
+}
+
+.main_footer::before {
+ content: ".main-footer";
+}
+
+.main_footer .container::before {
+ top: -28px;
+}
+
+.footer_contacts::before {
+ content: ".footer-contacts";
+}
+
+.footer_social::before {
+ content: ".footer-social";
+}
+
+.footer_copyright::before {
+ content: ".footer-copyright";
+}
